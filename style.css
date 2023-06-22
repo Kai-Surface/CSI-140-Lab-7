@@ -1,0 +1,34 @@
+.grid .main-content{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-gap: 10px;
+    grid-template-areas:
+    "column1 column2 column3";
+}
+
+.column1, .column2, .column3{
+    border-radius: 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    margin: 1em;
+    padding: 5px;
+}
+
+.nested-grid{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-gap: 10px;
+    grid-template-areas:
+    "nested-cell1 nested-cell2"
+    "nested-cell3 nested-cell4";
+}
+
+.nested-cell1, .nested-cell2, .nested-cell3, .nested-cell4{
+    border-radius: 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    margin: 1em;
+    padding: 5px;
+}
